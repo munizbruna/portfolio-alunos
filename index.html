@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Projetos de Alunos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .card-hover-effect {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2), 0 8px 10px -6px rgb(0 0 0 / 0.2);
+        }
+        /* Para o iframe carregar sem bordas feias */
+        iframe {
+            border: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white antialiased">
+
+    <!-- Container Principal -->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+        <!-- Cabeçalho -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">
+                Galeria de Projetos <span class="text-purple-400">Dev</span>
+            </h1>
+            <p class="mt-4 text-lg text-gray-400">Conheça os trabalhos incríveis dos nossos futuros desenvolvedores!</p>
+        </header>
+
+        <!-- Galeria de Projetos -->
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Card de Projeto 1 -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg card-hover-effect flex flex-col">
+                <div class="relative">
+                    <iframe class="w-full h-56" src="https://mathzaday.github.io/Cronometro/?authuser=1" title="Preview do projeto Cronômetro" loading="lazy" scrolling="no"></iframe>
+                    <div class="absolute inset-0"></div> <!-- Overlay para prevenir interação -->
+                    <div class="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-semibold px-3 py-1 m-2 rounded-full">JavaScript</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center mb-4">
+                        <img class="w-10 h-10 rounded-full mr-4" src="https://api.dicebear.com/8.x/bottts/svg?seed=mathzaday" alt="Avatar do aluno mathzaday">
+                        <div>
+                            <p class="font-semibold text-lg">Cronômetro</p>
+                            <p class="text-gray-400 text-sm">por mathzaday</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-6 flex-grow">
+                        Uma aplicação de cronômetro funcional para marcar o tempo com precisão.
+                    </p>
+                    <div class="flex justify-between mt-auto">
+                        <a href="https://mathzaday.github.io/Cronometro/?authuser=1" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                            Ver Projeto
+                        </a>
+                        <a href="https://github.com/mathzaday" target="_blank" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card de Projeto 2 -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg card-hover-effect flex flex-col">
+                <div class="relative">
+                    <iframe class="w-full h-56" src="https://andrezr0sa.github.io/cronometro/?authuser=1" title="Preview do projeto Cronômetro" loading="lazy" scrolling="no"></iframe>
+                    <div class="absolute inset-0"></div> <!-- Overlay para prevenir interação -->
+                    <div class="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-semibold px-3 py-1 m-2 rounded-full">JavaScript</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center mb-4">
+                        <img class="w-10 h-10 rounded-full mr-4" src="https://api.dicebear.com/8.x/adventurer/svg?seed=andrezr0sa" alt="Avatar do aluno andrezr0sa">
+                        <div>
+                            <p class="font-semibold text-lg">Cronômetro</p>
+                            <p class="text-gray-400 text-sm">por andrezr0sa</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-6 flex-grow">
+                        Uma aplicação de cronômetro simples e eficaz para diversas finalidades.
+                    </p>
+                    <div class="flex justify-between mt-auto">
+                        <a href="https://andrezr0sa.github.io/cronometro/?authuser=1" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                            Ver Projeto
+                        </a>
+                        <a href="https://github.com/andrezr0sa" target="_blank" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card de Projeto 3 -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg card-hover-effect flex flex-col">
+                <div class="relative">
+                    <iframe class="w-full h-56" src="https://eugehvicz.github.io/blog/?authuser=1" title="Preview do projeto Blog Pessoal" loading="lazy" scrolling="no"></iframe>
+                    <div class="absolute inset-0"></div> <!-- Overlay para prevenir interação -->
+                     <div class="absolute top-0 right-0 bg-purple-500 text-white text-xs font-semibold px-3 py-1 m-2 rounded-full">HTML/CSS</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center mb-4">
+                        <img class="w-10 h-10 rounded-full mr-4" src="https://api.dicebear.com/8.x/pixel-art/svg?seed=eugehvicz" alt="Avatar do aluno eugehvicz">
+                        <div>
+                            <p class="font-semibold text-lg">Blog Pessoal</p>
+                            <p class="text-gray-400 text-sm">por eugehvicz</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-6 flex-grow">
+                        Um blog pessoal para compartilhar ideias, projetos e conhecimentos.
+                    </p>
+                    <div class="flex justify-between mt-auto">
+                        <a href="https://eugehvicz.github.io/blog/?authuser=1" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                            Ver Projeto
+                        </a>
+                        <a href="https://github.com/eugehvicz" target="_blank" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Card de Projeto 4 -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg card-hover-effect flex flex-col">
+                <div class="relative">
+                    <iframe class="w-full h-56" src="https://gbitencorte.github.io/Blog/?authuser=1" title="Preview do projeto Blog" loading="lazy" scrolling="no"></iframe>
+                    <div class="absolute inset-0"></div> <!-- Overlay para prevenir interação -->
+                     <div class="absolute top-0 right-0 bg-purple-500 text-white text-xs font-semibold px-3 py-1 m-2 rounded-full">HTML/CSS</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center mb-4">
+                        <img class="w-10 h-10 rounded-full mr-4" src="https://api.dicebear.com/8.x/miniavs/svg?seed=gbitencorte" alt="Avatar do aluno gbitencorte">
+                        <div>
+                            <p class="font-semibold text-lg">Blog</p>
+                            <p class="text-gray-400 text-sm">por gbitencorte</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-6 flex-grow">
+                        Plataforma de blog para publicação de artigos, pensamentos e novidades.
+                    </p>
+                    <div class="flex justify-between mt-auto">
+                        <a href="https://gbitencorte.github.io/Blog/?authuser=1" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                            Ver Projeto
+                        </a>
+                        <a href="https://github.com/gbitencorte" target="_blank" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Card de Projeto 5 -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg card-hover-effect flex flex-col">
+                <div class="relative">
+                    <iframe class="w-full h-56" src="https://portifolio-qcv3.onrender.com/?authuser=1" title="Preview do projeto Portfólio Pessoal" loading="lazy" scrolling="no"></iframe>
+                    <div class="absolute inset-0"></div> <!-- Overlay para prevenir interação -->
+                     <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-semibold px-3 py-1 m-2 rounded-full">Web App</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center mb-4">
+                        <img class="w-10 h-10 rounded-full mr-4" src="https://api.dicebear.com/8.x/avataaars/svg?seed=julia-mendes" alt="Avatar da aluna Julia Mendes">
+                        <div>
+                            <p class="font-semibold text-lg">Portfólio Pessoal</p>
+                            <p class="text-gray-400 text-sm">por Julia Mendes</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-6 flex-grow">
+                        Um portfólio para exibir projetos e habilidades de desenvolvimento.
+                    </p>
+                    <div class="flex justify-between mt-auto">
+                        <a href="https://portifolio-qcv3.onrender.com/?authuser=1" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                            Ver Projeto
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 cursor-not-allowed opacity-50">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Card de Projeto 6 -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg card-hover-effect flex flex-col">
+                <div class="relative">
+                    <iframe class="w-full h-56" src="https://portifolio-2-ivrh.onrender.com/?authuser=1" title="Preview do projeto Portfólio Pessoal" loading="lazy" scrolling="no"></iframe>
+                    <div class="absolute inset-0"></div> <!-- Overlay para prevenir interação -->
+                     <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-semibold px-3 py-1 m-2 rounded-full">Web App</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center mb-4">
+                        <img class="w-10 h-10 rounded-full mr-4" src="https://api.dicebear.com/8.x/bottts/svg?seed=ricardo-alves" alt="Avatar do aluno Ricardo Alves">
+                        <div>
+                            <p class="font-semibold text-lg">Portfólio Pessoal</p>
+                            <p class="text-gray-400 text-sm">por Ricardo Alves</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-6 flex-grow">
+                       Um site de portfólio moderno e interativo para apresentar trabalhos.
+                    </p>
+                    <div class="flex justify-between mt-auto">
+                        <a href="https://portifolio-2-ivrh.onrender.com/?authuser=1" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                            Ver Projeto
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 cursor-not-allowed opacity-50">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card de Projeto 7 -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg card-hover-effect flex flex-col">
+                <div class="relative">
+                    <iframe class="w-full h-56" src="https://kazaki-dev0.github.io/Portif-lio2.0-main/?authuser=1" title="Preview do projeto Portfólio 2.0" loading="lazy" scrolling="no"></iframe>
+                    <div class="absolute inset-0"></div> <!-- Overlay para prevenir interação -->
+                     <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-semibold px-3 py-1 m-2 rounded-full">Web App</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center mb-4">
+                        <img class="w-10 h-10 rounded-full mr-4" src="https://api.dicebear.com/8.x/adventurer/svg?seed=kazaki-dev0" alt="Avatar do aluno kazaki-dev0">
+                        <div>
+                            <p class="font-semibold text-lg">Portfólio 2.0</p>
+                            <p class="text-gray-400 text-sm">por kazaki-dev0</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-6 flex-grow">
+                       Versão atualizada do portfólio profissional com novos projetos.
+                    </p>
+                    <div class="flex justify-between mt-auto">
+                        <a href="https://kazaki-dev0.github.io/Portif-lio2.0-main/?authuser=1" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                            Ver Projeto
+                        </a>
+                        <a href="https://github.com/kazaki-dev0" target="_blank" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card de Projeto 8 -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg card-hover-effect flex flex-col">
+                <div class="relative">
+                    <iframe class="w-full h-56" src="https://portif-lio-7g63.onrender.com/?authuser=1" title="Preview do projeto Portfólio Pessoal" loading="lazy" scrolling="no"></iframe>
+                    <div class="absolute inset-0"></div> <!-- Overlay para prevenir interação -->
+                     <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-semibold px-3 py-1 m-2 rounded-full">Web App</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center mb-4">
+                        <img class="w-10 h-10 rounded-full mr-4" src="https://api.dicebear.com/8.x/pixel-art/svg?seed=fernanda-lima" alt="Avatar da aluna Fernanda Lima">
+                        <div>
+                            <p class="font-semibold text-lg">Portfólio Pessoal</p>
+                            <p class="text-gray-400 text-sm">por Fernanda Lima</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-6 flex-grow">
+                       Uma galeria de projetos e experiências profissionais para demonstrar competências.
+                    </p>
+                    <div class="flex justify-between mt-auto">
+                        <a href="https://portif-lio-7g63.onrender.com/?authuser=1" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                            Ver Projeto
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 cursor-not-allowed opacity-50">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card de Projeto 9 -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg card-hover-effect flex flex-col">
+                <div class="relative">
+                    <iframe class="w-full h-56" src="https://portfolio-25-09.onrender.com/?authuser=1" title="Preview do projeto Portfólio Pessoal" loading="lazy" scrolling="no"></iframe>
+                    <div class="absolute inset-0"></div> <!-- Overlay para prevenir interação -->
+                     <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-semibold px-3 py-1 m-2 rounded-full">Web App</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center mb-4">
+                        <img class="w-10 h-10 rounded-full mr-4" src="https://api.dicebear.com/8.x/miniavs/svg?seed=lucas-martins" alt="Avatar do aluno Lucas Martins">
+                        <div>
+                            <p class="font-semibold text-lg">Portfólio Pessoal</p>
+                            <p class="text-gray-400 text-sm">por Lucas Martins</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-6 flex-grow">
+                       Apresentação de habilidades e trabalhos realizados durante a jornada de aprendizado.
+                    </p>
+                    <div class="flex justify-between mt-auto">
+                        <a href="https://portfolio-25-09.onrender.com/?authuser=1" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                            Ver Projeto
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 cursor-not-allowed opacity-50">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card de Projeto 10 -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg card-hover-effect flex flex-col">
+                <div class="relative">
+                    <iframe class="w-full h-56" src="https://ubjorn.github.io/Meu-Portifolio/?authuser=1" title="Preview do projeto Meu Portfólio" loading="lazy" scrolling="no"></iframe>
+                    <div class="absolute inset-0"></div> <!-- Overlay para prevenir interação -->
+                     <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-semibold px-3 py-1 m-2 rounded-full">Web App</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center mb-4">
+                        <img class="w-10 h-10 rounded-full mr-4" src="https://api.dicebear.com/8.x/avataaars/svg?seed=ubjorn" alt="Avatar do aluno ubjorn">
+                        <div>
+                            <p class="font-semibold text-lg">Meu Portfólio</p>
+                            <p class="text-gray-400 text-sm">por ubjorn</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-6 flex-grow">
+                       Um espaço para mostrar a jornada e evolução como desenvolvedor.
+                    </p>
+                    <div class="flex justify-between mt-auto">
+                        <a href="https://ubjorn.github.io/Meu-Portifolio/?authuser=1" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                            Ver Projeto
+                        </a>
+                        <a href="https://github.com/ubjorn" target="_blank" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        
+        <!-- Rodapé -->
+        <footer class="text-center mt-12 border-t border-gray-700 pt-6">
+            <p class="text-gray-500">&copy; 2024 Galeria de Projetos Dev. Todos os direitos reservados.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
+
